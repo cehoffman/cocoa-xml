@@ -1,6 +1,7 @@
 = Cocoa-XML
 
-http://github.com/cehoffman/cocoa-xml
+* http://github.com/cehoffman/cocoa-xml
+* http://cehoffman.github.com/cocoa-xml
 
 == DESCRIPTION:
 
