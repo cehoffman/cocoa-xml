@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Class: Nokogiri::CSS::Parser</title>
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '../..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (P)</a> &raquo; 
+    <span class='title'><a href="../../Nokogiri.html" title="Nokogiri (module)">Nokogiri</a></span> &raquo; <span class='title'><a href="../CSS.html" title="Nokogiri::CSS (module)">CSS</a></span>
+     &raquo; 
+    <span class="title">Parser</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: Nokogiri::CSS::Parser 
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><a href="GeneratedTokenizer.html" title="Nokogiri::CSS::GeneratedTokenizer (class)">GeneratedTokenizer</a></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Racc::Parser</li>
+          
+            <li class="next"><a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></li>
+          
+            <li class="next"><a href="GeneratedTokenizer.html" title="Nokogiri::CSS::GeneratedTokenizer (class)">GeneratedTokenizer</a></li>
+          
+            <li class="next">Nokogiri::CSS::Parser</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/nokogiri/css/parser.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Constants inherited from <a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></h3>
+  <p class="inherited"><a href="GeneratedParser.html#Racc_arg-constant" title="Nokogiri::CSS::GeneratedParser::Racc_arg (constant)">Racc_arg</a>, <a href="GeneratedParser.html#Racc_debug_parser-constant" title="Nokogiri::CSS::GeneratedParser::Racc_debug_parser (constant)">Racc_debug_parser</a>, <a href="GeneratedParser.html#Racc_token_to_s_table-constant" title="Nokogiri::CSS::GeneratedParser::Racc_token_to_s_table (constant)">Racc_token_to_s_table</a></p>
+
+  
+  <h2>Class Attribute Summary</h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cache_on-class_method" title="cache_on (class method)">+ (Object) <strong>cache_on</strong> </a>
+    
+
+    
+      (also: cache_on?)
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Turn on CSS parse caching.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+
+  <h2>Class Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#%5B%5D-class_method" title="[] (class method)">+ (Object) <strong>[]</strong>(string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Get the css selector in <tt>string</tt> from the cache.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#%5B%5D%3D-class_method" title="[]= (class method)">+ (Object) <strong>[]</strong>(string, value) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Set the css selector in <tt>string</tt> in the cache to <tt>value</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear_cache-class_method" title="clear_cache (class method)">+ (Object) <strong>clear_cache</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Clear the cache.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse-class_method" title="parse (class method)">+ (Object) <strong>parse</strong>(selector) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+# Parse this CSS selector in <tt>selector</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#without_cache-class_method" title="without_cache (class method)">+ (Object) <strong>without_cache</strong>(&amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Execute <tt>block</tt> without cache.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Parser) <strong>initialize</strong>(namespaces = {}) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Create a new CSS parser with respect to <tt>namespaces</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#on_error-instance_method" title="#on_error (instance method)">- (Object) <strong>on_error</strong>(error_token_id, error_value, value_stack) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+On CSS parser error, raise an exception.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#xpath_for-instance_method" title="#xpath_for (instance method)">- (Object) <strong>xpath_for</strong>(string, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Get the xpath for <tt>string</tt> using <tt>options</tt>.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <a href="GeneratedTokenizer.html" title="Nokogiri::CSS::GeneratedTokenizer (class)">GeneratedTokenizer</a></h3>
+  <p class="inherited"><a href="GeneratedTokenizer.html#action-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#action (method)">#action</a>, <a href="GeneratedTokenizer.html#load_file-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#load_file (method)">#load_file</a>, <a href="GeneratedTokenizer.html#next_token-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#next_token (method)">#next_token</a>, <a href="GeneratedTokenizer.html#scan_file-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#scan_file (method)">#scan_file</a>, <a href="GeneratedTokenizer.html#scan_setup-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#scan_setup (method)">#scan_setup</a>, <a href="GeneratedTokenizer.html#scan_str-instance_method" title="Nokogiri::CSS::GeneratedTokenizer#scan_str (method)">#scan_str</a></p>
+
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></h3>
+  <p class="inherited"><a href="GeneratedParser.html#_reduce_1-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_1 (method)">#_reduce_1</a>, <a href="GeneratedParser.html#_reduce_10-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_10 (method)">#_reduce_10</a>, <a href="GeneratedParser.html#_reduce_11-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_11 (method)">#_reduce_11</a>, <a href="GeneratedParser.html#_reduce_13-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_13 (method)">#_reduce_13</a>, <a href="GeneratedParser.html#_reduce_14-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_14 (method)">#_reduce_14</a>, <a href="GeneratedParser.html#_reduce_15-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_15 (method)">#_reduce_15</a>, <a href="GeneratedParser.html#_reduce_16-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_16 (method)">#_reduce_16</a>, <a href="GeneratedParser.html#_reduce_18-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_18 (method)">#_reduce_18</a>, <a href="GeneratedParser.html#_reduce_19-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_19 (method)">#_reduce_19</a>, <a href="GeneratedParser.html#_reduce_2-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_2 (method)">#_reduce_2</a>, <a href="GeneratedParser.html#_reduce_20-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_20 (method)">#_reduce_20</a>, <a href="GeneratedParser.html#_reduce_21-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_21 (method)">#_reduce_21</a>, <a href="GeneratedParser.html#_reduce_22-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_22 (method)">#_reduce_22</a>, <a href="GeneratedParser.html#_reduce_24-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_24 (method)">#_reduce_24</a>, <a href="GeneratedParser.html#_reduce_25-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_25 (method)">#_reduce_25</a>, <a href="GeneratedParser.html#_reduce_26-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_26 (method)">#_reduce_26</a>, <a href="GeneratedParser.html#_reduce_27-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_27 (method)">#_reduce_27</a>, <a href="GeneratedParser.html#_reduce_28-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_28 (method)">#_reduce_28</a>, <a href="GeneratedParser.html#_reduce_29-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_29 (method)">#_reduce_29</a>, <a href="GeneratedParser.html#_reduce_3-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_3 (method)">#_reduce_3</a>, <a href="GeneratedParser.html#_reduce_30-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_30 (method)">#_reduce_30</a>, <a href="GeneratedParser.html#_reduce_31-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_31 (method)">#_reduce_31</a>, <a href="GeneratedParser.html#_reduce_32-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_32 (method)">#_reduce_32</a>, <a href="GeneratedParser.html#_reduce_33-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_33 (method)">#_reduce_33</a>, <a href="GeneratedParser.html#_reduce_36-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_36 (method)">#_reduce_36</a>, <a href="GeneratedParser.html#_reduce_37-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_37 (method)">#_reduce_37</a>, <a href="GeneratedParser.html#_reduce_38-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_38 (method)">#_reduce_38</a>, <a href="GeneratedParser.html#_reduce_39-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_39 (method)">#_reduce_39</a>, <a href="GeneratedParser.html#_reduce_4-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_4 (method)">#_reduce_4</a>, <a href="GeneratedParser.html#_reduce_40-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_40 (method)">#_reduce_40</a>, <a href="GeneratedParser.html#_reduce_41-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_41 (method)">#_reduce_41</a>, <a href="GeneratedParser.html#_reduce_44-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_44 (method)">#_reduce_44</a>, <a href="GeneratedParser.html#_reduce_45-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_45 (method)">#_reduce_45</a>, <a href="GeneratedParser.html#_reduce_46-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_46 (method)">#_reduce_46</a>, <a href="GeneratedParser.html#_reduce_47-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_47 (method)">#_reduce_47</a>, <a href="GeneratedParser.html#_reduce_5-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_5 (method)">#_reduce_5</a>, <a href="GeneratedParser.html#_reduce_52-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_52 (method)">#_reduce_52</a>, <a href="GeneratedParser.html#_reduce_53-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_53 (method)">#_reduce_53</a>, <a href="GeneratedParser.html#_reduce_54-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_54 (method)">#_reduce_54</a>, <a href="GeneratedParser.html#_reduce_56-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_56 (method)">#_reduce_56</a>, <a href="GeneratedParser.html#_reduce_57-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_57 (method)">#_reduce_57</a>, <a href="GeneratedParser.html#_reduce_58-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_58 (method)">#_reduce_58</a>, <a href="GeneratedParser.html#_reduce_59-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_59 (method)">#_reduce_59</a>, <a href="GeneratedParser.html#_reduce_6-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_6 (method)">#_reduce_6</a>, <a href="GeneratedParser.html#_reduce_60-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_60 (method)">#_reduce_60</a>, <a href="GeneratedParser.html#_reduce_61-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_61 (method)">#_reduce_61</a>, <a href="GeneratedParser.html#_reduce_62-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_62 (method)">#_reduce_62</a>, <a href="GeneratedParser.html#_reduce_63-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_63 (method)">#_reduce_63</a>, <a href="GeneratedParser.html#_reduce_7-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_7 (method)">#_reduce_7</a>, <a href="GeneratedParser.html#_reduce_8-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_8 (method)">#_reduce_8</a>, <a href="GeneratedParser.html#_reduce_9-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_9 (method)">#_reduce_9</a>, <a href="GeneratedParser.html#_reduce_none-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_none (method)">#_reduce_none</a></p>
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><a href="" title="Nokogiri::CSS::Parser (class)">Parser</a></tt>) <strong>initialize</strong>(namespaces = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Create a new CSS parser with respect to <tt>namespaces</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 54</span>
+
+<span class='kw'>def</span> <span class='id initialize'>initialize</span> <span class='id namespaces'>namespaces</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='ivar'>@namespaces</span> <span class='op'>=</span> <span class='id namespaces'>namespaces</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="class_attr_details" class="attr_details">
+    <h2>Class Attribute Details</h2>
+    
+      
+      <span id="cache_on=-class_method"></span>
+      <span id="cache_on-class_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="cache_on-class_method">
+  
+    + (<tt>Object</tt>) <strong>cache_on</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='cache_on?-class_method'>cache_on?</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Turn on CSS parse caching
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id cache_on'>cache_on</span>
+  <span class='ivar'>@cache_on</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="[]-class_method">
+  
+    + (<tt>Object</tt>) <strong>[]</strong>(string) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the css selector in <tt>string</tt> from the cache
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='op'>[]</span> <span class='id string'>string</span>
+  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='ivar'>@cache_on</span>
+  <span class='ivar'>@mutex</span><span class='period'>.</span><span class='id synchronize'>synchronize</span> <span class='lbrace'>{</span> <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='id string'>string</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="[]=-class_method">
+  
+    + (<tt>Object</tt>) <strong>[]=</strong>(string, value) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Set the css selector in <tt>string</tt> in the cache to <tt>value</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='op'>[]=</span> <span class='id string'>string</span><span class='comma'>,</span> <span class='id value'>value</span>
+  <span class='kw'>return</span> <span class='id value'>value</span> <span class='kw'>unless</span> <span class='ivar'>@cache_on</span>
+  <span class='ivar'>@mutex</span><span class='period'>.</span><span class='id synchronize'>synchronize</span> <span class='lbrace'>{</span> <span class='ivar'>@cache</span><span class='lbracket'>[</span><span class='id string'>string</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id value'>value</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="clear_cache-class_method">
+  
+    + (<tt>Object</tt>) <strong>clear_cache</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Clear the cache
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id clear_cache'>clear_cache</span>
+  <span class='ivar'>@mutex</span><span class='period'>.</span><span class='id synchronize'>synchronize</span> <span class='lbrace'>{</span> <span class='ivar'>@cache</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="parse-class_method">
+  
+    + (<tt>Object</tt>) <strong>parse</strong>(selector) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+# Parse this CSS selector in <tt>selector</tt>. Returns an AST.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id parse'>parse</span> <span class='id selector'>selector</span>
+  <span class='ivar'>@warned</span> <span class='op'>||=</span> <span class='kw'>false</span>
+  <span class='kw'>unless</span> <span class='ivar'>@warned</span>
+    <span class='gvar'>$stderr</span><span class='period'>.</span><span class='id puts'>puts</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>Nokogiri::CSS::Parser.parse is deprecated, call Nokogiri::CSS.parse(), this will be removed August 1st or version 1.4.0 (whichever is first)</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+    <span class='ivar'>@warned</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='kw'>end</span>
+  <span class='id new'>new</span><span class='period'>.</span><span class='id parse'>parse</span> <span class='id selector'>selector</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="without_cache-class_method">
+  
+    + (<tt>Object</tt>) <strong>without_cache</strong>(&amp;block) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Execute <tt>block</tt> without cache
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id without_cache'>without_cache</span> <span class='op'>&amp;</span><span class='id block'>block</span>
+  <span class='id tmp'>tmp</span> <span class='op'>=</span> <span class='ivar'>@cache_on</span>
+  <span class='ivar'>@cache_on</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='id block'>block</span><span class='period'>.</span><span class='id call'>call</span>
+  <span class='ivar'>@cache_on</span> <span class='op'>=</span> <span class='id tmp'>tmp</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="on_error-instance_method">
+  
+    - (<tt>Object</tt>) <strong>on_error</strong>(error_token_id, error_value, value_stack) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+On CSS parser error, raise an exception
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Raises:</h3>
+<ul class="raise">
+  
+    <li>
+      
+        <span class='type'>(<tt><a href="SyntaxError.html" title="Nokogiri::CSS::SyntaxError (class)">SyntaxError</a></tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id on_error'>on_error</span> <span class='id error_token_id'>error_token_id</span><span class='comma'>,</span> <span class='id error_value'>error_value</span><span class='comma'>,</span> <span class='id value_stack'>value_stack</span>
+  <span class='id after'>after</span> <span class='op'>=</span> <span class='id value_stack'>value_stack</span><span class='period'>.</span><span class='id compact'>compact</span><span class='period'>.</span><span class='id last'>last</span>
+  <span class='id raise'>raise</span> <span class='const'>SyntaxError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>unexpected '</span><span class='embexpr_beg'>#{</span><span class='id error_value'>error_value</span><span class='rbrace'>}</span><span class='tstring_content'>' after '</span><span class='embexpr_beg'>#{</span><span class='id after'>after</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="xpath_for-instance_method">
+  
+    - (<tt>Object</tt>) <strong>xpath_for</strong>(string, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the xpath for <tt>string</tt> using <tt>options</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/parser.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id xpath_for'>xpath_for</span> <span class='id string'>string</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id key'>key</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id string'>string</span><span class='rbrace'>}</span><span class='embexpr_beg'>#{</span><span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:ns</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='embexpr_beg'>#{</span><span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:prefix</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id v'>v</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='lbracket'>[</span><span class='id key'>key</span><span class='rbracket'>]</span>
+  <span class='kw'>return</span> <span class='id v'>v</span> <span class='kw'>if</span> <span class='id v'>v</span>
+
+  <span class='id args'>args</span> <span class='op'>=</span> <span class='lbracket'>[</span>
+    <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:prefix</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>//</span><span class='tstring_end'>'</span></span><span class='comma'>,</span>
+    <span class='id options'>options</span><span class='lbracket'>[</span><span class='symbol'>:visitor</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'>XPathVisitor</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='rbracket'>]</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='lbracket'>[</span><span class='id key'>key</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id parse'>parse</span><span class='lparen'>(</span><span class='id string'>string</span><span class='rparen'>)</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id ast'>ast</span><span class='op'>|</span>
+    <span class='id ast'>ast</span><span class='period'>.</span><span class='id to_xpath'>to_xpath</span><span class='lparen'>(</span><span class='op'>*</span><span class='id args'>args</span><span class='rparen'>)</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Jan 26 15:32:44 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
+</html>

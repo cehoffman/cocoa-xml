@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Class: Nokogiri::CSS::Node</title>
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '../..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (N)</a> &raquo; 
+    <span class='title'><a href="../../Nokogiri.html" title="Nokogiri (module)">Nokogiri</a></span> &raquo; <span class='title'><a href="../CSS.html" title="Nokogiri::CSS (module)">CSS</a></span>
+     &raquo; 
+    <span class="title">Node</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: Nokogiri::CSS::Node 
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Nokogiri::CSS::Node</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/nokogiri/css/node.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  <h2>Instance Attribute Summary</h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#type-instance_method" title="#type (instance method)">- (Object) <strong>type</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Get the type of this node.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value-instance_method" title="#value (instance method)">- (Object) <strong>value</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Get the value of this node.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#accept-instance_method" title="#accept (instance method)">- (Object) <strong>accept</strong>(visitor) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Accept <tt>visitor</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_type-instance_method" title="#find_by_type (instance method)">- (Object) <strong>find_by_type</strong>(types) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Find a node by type using <tt>types</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Node) <strong>initialize</strong>(type, value) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Create a new Node with <tt>type</tt> and <tt>value</tt>.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#preprocess%21-instance_method" title="#preprocess! (instance method)">- (Object) <strong>preprocess!</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Preprocess this node tree.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_a-instance_method" title="#to_a (instance method)">- (Object) <strong>to_a</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Convert to array.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_type-instance_method" title="#to_type (instance method)">- (Object) <strong>to_type</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Convert to_type.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_xpath-instance_method" title="#to_xpath (instance method)">- (Object) <strong>to_xpath</strong>(prefix = '//', visitor = XPathVisitor.new) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+# Convert this CSS node to xpath with <tt>prefix</tt> using
+<tt>visitor</tt>.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><a href="" title="Nokogiri::CSS::Node (class)">Node</a></tt>) <strong>initialize</strong>(type, value) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Create a new Node with <tt>type</tt> and <tt>value</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id initialize'>initialize</span> <span class='id type'>type</span><span class='comma'>,</span> <span class='id value'>value</span>
+  <span class='ivar'>@type</span> <span class='op'>=</span> <span class='id type'>type</span>
+  <span class='ivar'>@value</span> <span class='op'>=</span> <span class='id value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="type=-instance_method"></span>
+      <span id="type-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="type-instance_method">
+  
+    - (<tt>Object</tt>) <strong>type</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the type of this node
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+5
+6
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 5</span>
+
+<span class='kw'>def</span> <span class='id type'>type</span>
+  <span class='ivar'>@type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="value=-instance_method"></span>
+      <span id="value-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="value-instance_method">
+  
+    - (<tt>Object</tt>) <strong>value</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the value of this node
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id value'>value</span>
+  <span class='ivar'>@value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="accept-instance_method">
+  
+    - (<tt>Object</tt>) <strong>accept</strong>(visitor) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Accept <tt>visitor</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id accept'>accept</span> <span class='id visitor'>visitor</span>
+  <span class='id visitor'>visitor</span><span class='period'>.</span><span class='id send'>send</span><span class='lparen'>(</span><span class='symbol'>:visit_</span><span class='embexpr_beg'>#{</span><span class='id type'>type</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='period'>.</span><span class='id downcase'>downcase</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="find_by_type-instance_method">
+  
+    - (<tt>Object</tt>) <strong>find_by_type</strong>(types) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Find a node by type using <tt>types</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79
+80
+81
+82
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id find_by_type'>find_by_type</span> <span class='id types'>types</span>
+  <span class='id matches'>matches</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id matches'>matches</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id to_type'>to_type</span> <span class='op'>==</span> <span class='id types'>types</span>
+  <span class='ivar'>@value</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id v'>v</span><span class='op'>|</span>
+    <span class='id matches'>matches</span> <span class='op'>+=</span> <span class='id v'>v</span><span class='period'>.</span><span class='id find_by_type'>find_by_type</span><span class='lparen'>(</span><span class='id types'>types</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id v'>v</span><span class='period'>.</span><span class='id respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:find_by_type</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id matches'>matches</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="preprocess!-instance_method">
+  
+    - (<tt>Object</tt>) <strong>preprocess!</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Preprocess this node tree
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id preprocess!'>preprocess!</span>
+  <span class='comment'>### Deal with nth-child
+</span>  <span class='id matches'>matches</span> <span class='op'>=</span> <span class='id find_by_type'>find_by_type</span><span class='lparen'>(</span>
+    <span class='lbracket'>[</span><span class='symbol'>:CONDITIONAL_SELECTOR</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:ELEMENT_NAME</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:PSEUDO_CLASS</span><span class='comma'>,</span>
+        <span class='lbracket'>[</span><span class='symbol'>:FUNCTION</span><span class='rbracket'>]</span>
+      <span class='rbracket'>]</span>
+    <span class='rbracket'>]</span>
+  <span class='rparen'>)</span>
+  <span class='id matches'>matches</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id match'>match</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^nth-(last-)?child</span><span class='regexp_end'>/</span></span>
+      <span class='id tag_name'>tag_name</span> <span class='op'>=</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>*</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:COMBINATOR</span><span class='comma'>,</span> <span class='lbracket'>[</span>
+        <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>self(</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id tag_name'>tag_name</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+      <span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'>### Deal with first-child, last-child
+</span>  <span class='id matches'>matches</span> <span class='op'>=</span> <span class='id find_by_type'>find_by_type</span><span class='lparen'>(</span>
+    <span class='lbracket'>[</span><span class='symbol'>:CONDITIONAL_SELECTOR</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:ELEMENT_NAME</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='symbol'>:PSEUDO_CLASS</span><span class='rbracket'>]</span>
+  <span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id matches'>matches</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id match'>match</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>first-child</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>last-child</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span><span class='rparen'>)</span>
+      <span class='id which'>which</span> <span class='op'>=</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span><span class='period'>.</span><span class='id gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>-\w*$</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+      <span class='id tag_name'>tag_name</span> <span class='op'>=</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>*</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:COMBINATOR</span><span class='comma'>,</span> <span class='lbracket'>[</span>
+        <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id which'>which</span><span class='rbrace'>}</span><span class='tstring_content'>(</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span>
+        <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>self(</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id tag_name'>tag_name</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+      <span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>elsif</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>only-child</span><span class='tstring_end'>'</span></span> <span class='op'>==</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span>
+      <span class='id tag_name'>tag_name</span> <span class='op'>=</span> <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>*</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+      <span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:COMBINATOR</span><span class='comma'>,</span> <span class='lbracket'>[</span>
+        <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id match'>match</span><span class='period'>.</span><span class='id value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id value'>value</span><span class='period'>.</span><span class='id first'>first</span><span class='rbrace'>}</span><span class='tstring_content'>(</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span>
+        <span class='const'>Node</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>self(</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id tag_name'>tag_name</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+      <span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="to_a-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_a</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Convert to array
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id to_a'>to_a</span>
+  <span class='lbracket'>[</span><span class='ivar'>@type</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='ivar'>@value</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id n'>n</span><span class='op'>|</span> <span class='id n'>n</span><span class='period'>.</span><span class='id respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:to_a</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id n'>n</span><span class='period'>.</span><span class='id to_a'>to_a</span> <span class='op'>:</span> <span class='lbracket'>[</span><span class='id n'>n</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="to_type-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_type</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Convert to_type
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89
+90
+91</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id to_type'>to_type</span>
+  <span class='lbracket'>[</span><span class='ivar'>@type</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='ivar'>@value</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id n'>n</span><span class='op'>|</span>
+    <span class='id n'>n</span><span class='period'>.</span><span class='id to_type'>to_type</span> <span class='kw'>if</span> <span class='id n'>n</span><span class='period'>.</span><span class='id respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:to_type</span><span class='rparen'>)</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id compact'>compact</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="to_xpath-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_xpath</strong>(prefix = '//', visitor = XPathVisitor.new) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+# Convert this CSS node to xpath with <tt>prefix</tt> using
+<tt>visitor</tt>
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/node.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id to_xpath'>to_xpath</span> <span class='id prefix'>prefix</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>//</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='id visitor'>visitor</span> <span class='op'>=</span> <span class='const'>XPathVisitor</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id preprocess!'>preprocess!</span>
+  <span class='id prefix'>prefix</span> <span class='op'>+</span> <span class='id visitor'>visitor</span><span class='period'>.</span><span class='id accept'>accept</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Jan 26 15:32:43 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
+</html>

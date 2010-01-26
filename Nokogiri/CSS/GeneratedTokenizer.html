@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Class: Nokogiri::CSS::GeneratedTokenizer</title>
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '../..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (G)</a> &raquo; 
+    <span class='title'><a href="../../Nokogiri.html" title="Nokogiri (module)">Nokogiri</a></span> &raquo; <span class='title'><a href="../CSS.html" title="Nokogiri::CSS (module)">CSS</a></span>
+     &raquo; 
+    <span class="title">GeneratedTokenizer</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: Nokogiri::CSS::GeneratedTokenizer 
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Racc::Parser</li>
+          
+            <li class="next"><a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></li>
+          
+            <li class="next">Nokogiri::CSS::GeneratedTokenizer</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/nokogiri/css/generated_tokenizer.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><a href="Parser.html" title="Nokogiri::CSS::Parser (class)">Parser</a>, <a href="Tokenizer.html" title="Nokogiri::CSS::Tokenizer (class)">Tokenizer</a></p>
+</div>
+
+  <h2>Constant Summary</h2>
+  
+
+
+  
+  
+  
+  
+  <h3 class="inherited">Constants inherited from <a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></h3>
+  <p class="inherited"><a href="GeneratedParser.html#Racc_arg-constant" title="Nokogiri::CSS::GeneratedParser::Racc_arg (constant)">Racc_arg</a>, <a href="GeneratedParser.html#Racc_debug_parser-constant" title="Nokogiri::CSS::GeneratedParser::Racc_debug_parser (constant)">Racc_debug_parser</a>, <a href="GeneratedParser.html#Racc_token_to_s_table-constant" title="Nokogiri::CSS::GeneratedParser::Racc_token_to_s_table (constant)">Racc_token_to_s_table</a></p>
+
+  
+  <h2>Instance Attribute Summary</h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#filename-instance_method" title="#filename (instance method)">- (Object) <strong>filename</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the value of attribute filename.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lineno-instance_method" title="#lineno (instance method)">- (Object) <strong>lineno</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the value of attribute lineno.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#state-instance_method" title="#state (instance method)">- (Object) <strong>state</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Returns the value of attribute state.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#action-instance_method" title="#action (instance method)">- (Object) <strong>action</strong>(&amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_file-instance_method" title="#load_file (instance method)">- (Object) <strong>load_file</strong>(filename) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#next_token-instance_method" title="#next_token (instance method)">- (Object) <strong>next_token</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scan_file-instance_method" title="#scan_file (instance method)">- (Object) <strong>scan_file</strong>(filename) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scan_setup-instance_method" title="#scan_setup (instance method)">- (Object) <strong>scan_setup</strong>(str) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scan_str-instance_method" title="#scan_str (instance method)">- (Object) <strong>scan_str</strong>(str) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"></span>
+  
+</li>
+
+    
+  </ul>
+
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <a href="GeneratedParser.html" title="Nokogiri::CSS::GeneratedParser (class)">GeneratedParser</a></h3>
+  <p class="inherited"><a href="GeneratedParser.html#_reduce_1-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_1 (method)">#_reduce_1</a>, <a href="GeneratedParser.html#_reduce_10-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_10 (method)">#_reduce_10</a>, <a href="GeneratedParser.html#_reduce_11-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_11 (method)">#_reduce_11</a>, <a href="GeneratedParser.html#_reduce_13-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_13 (method)">#_reduce_13</a>, <a href="GeneratedParser.html#_reduce_14-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_14 (method)">#_reduce_14</a>, <a href="GeneratedParser.html#_reduce_15-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_15 (method)">#_reduce_15</a>, <a href="GeneratedParser.html#_reduce_16-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_16 (method)">#_reduce_16</a>, <a href="GeneratedParser.html#_reduce_18-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_18 (method)">#_reduce_18</a>, <a href="GeneratedParser.html#_reduce_19-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_19 (method)">#_reduce_19</a>, <a href="GeneratedParser.html#_reduce_2-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_2 (method)">#_reduce_2</a>, <a href="GeneratedParser.html#_reduce_20-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_20 (method)">#_reduce_20</a>, <a href="GeneratedParser.html#_reduce_21-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_21 (method)">#_reduce_21</a>, <a href="GeneratedParser.html#_reduce_22-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_22 (method)">#_reduce_22</a>, <a href="GeneratedParser.html#_reduce_24-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_24 (method)">#_reduce_24</a>, <a href="GeneratedParser.html#_reduce_25-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_25 (method)">#_reduce_25</a>, <a href="GeneratedParser.html#_reduce_26-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_26 (method)">#_reduce_26</a>, <a href="GeneratedParser.html#_reduce_27-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_27 (method)">#_reduce_27</a>, <a href="GeneratedParser.html#_reduce_28-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_28 (method)">#_reduce_28</a>, <a href="GeneratedParser.html#_reduce_29-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_29 (method)">#_reduce_29</a>, <a href="GeneratedParser.html#_reduce_3-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_3 (method)">#_reduce_3</a>, <a href="GeneratedParser.html#_reduce_30-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_30 (method)">#_reduce_30</a>, <a href="GeneratedParser.html#_reduce_31-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_31 (method)">#_reduce_31</a>, <a href="GeneratedParser.html#_reduce_32-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_32 (method)">#_reduce_32</a>, <a href="GeneratedParser.html#_reduce_33-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_33 (method)">#_reduce_33</a>, <a href="GeneratedParser.html#_reduce_36-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_36 (method)">#_reduce_36</a>, <a href="GeneratedParser.html#_reduce_37-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_37 (method)">#_reduce_37</a>, <a href="GeneratedParser.html#_reduce_38-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_38 (method)">#_reduce_38</a>, <a href="GeneratedParser.html#_reduce_39-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_39 (method)">#_reduce_39</a>, <a href="GeneratedParser.html#_reduce_4-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_4 (method)">#_reduce_4</a>, <a href="GeneratedParser.html#_reduce_40-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_40 (method)">#_reduce_40</a>, <a href="GeneratedParser.html#_reduce_41-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_41 (method)">#_reduce_41</a>, <a href="GeneratedParser.html#_reduce_44-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_44 (method)">#_reduce_44</a>, <a href="GeneratedParser.html#_reduce_45-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_45 (method)">#_reduce_45</a>, <a href="GeneratedParser.html#_reduce_46-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_46 (method)">#_reduce_46</a>, <a href="GeneratedParser.html#_reduce_47-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_47 (method)">#_reduce_47</a>, <a href="GeneratedParser.html#_reduce_5-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_5 (method)">#_reduce_5</a>, <a href="GeneratedParser.html#_reduce_52-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_52 (method)">#_reduce_52</a>, <a href="GeneratedParser.html#_reduce_53-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_53 (method)">#_reduce_53</a>, <a href="GeneratedParser.html#_reduce_54-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_54 (method)">#_reduce_54</a>, <a href="GeneratedParser.html#_reduce_56-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_56 (method)">#_reduce_56</a>, <a href="GeneratedParser.html#_reduce_57-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_57 (method)">#_reduce_57</a>, <a href="GeneratedParser.html#_reduce_58-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_58 (method)">#_reduce_58</a>, <a href="GeneratedParser.html#_reduce_59-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_59 (method)">#_reduce_59</a>, <a href="GeneratedParser.html#_reduce_6-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_6 (method)">#_reduce_6</a>, <a href="GeneratedParser.html#_reduce_60-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_60 (method)">#_reduce_60</a>, <a href="GeneratedParser.html#_reduce_61-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_61 (method)">#_reduce_61</a>, <a href="GeneratedParser.html#_reduce_62-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_62 (method)">#_reduce_62</a>, <a href="GeneratedParser.html#_reduce_63-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_63 (method)">#_reduce_63</a>, <a href="GeneratedParser.html#_reduce_7-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_7 (method)">#_reduce_7</a>, <a href="GeneratedParser.html#_reduce_8-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_8 (method)">#_reduce_8</a>, <a href="GeneratedParser.html#_reduce_9-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_9 (method)">#_reduce_9</a>, <a href="GeneratedParser.html#_reduce_none-instance_method" title="Nokogiri::CSS::GeneratedParser#_reduce_none (method)">#_reduce_none</a></p>
+
+  
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <span id="filename-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="filename-instance_method">
+  
+    - (<tt>Object</tt>) <strong>filename</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute filename
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id filename'>filename</span>
+  <span class='ivar'>@filename</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="lineno-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="lineno-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lineno</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute lineno
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id lineno'>lineno</span>
+  <span class='ivar'>@lineno</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="state=-instance_method"></span>
+      <span id="state-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="state-instance_method">
+  
+    - (<tt>Object</tt>) <strong>state</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns the value of attribute state
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id state'>state</span>
+  <span class='ivar'>@state</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="action-instance_method">
+  
+    - (<tt>Object</tt>) <strong>action</strong>(&amp;block) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id action'>action</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id block'>block</span><span class='rparen'>)</span>
+  <span class='kw'>yield</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="load_file-instance_method">
+  
+    - (<tt>Object</tt>) <strong>load_file</strong>(filename) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id load_file'>load_file</span><span class='lparen'>(</span> <span class='id filename'>filename</span> <span class='rparen'>)</span>
+  <span class='ivar'>@filename</span> <span class='op'>=</span> <span class='id filename'>filename</span>
+  <span class='id open'>open</span><span class='lparen'>(</span><span class='id filename'>filename</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>r</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span>
+    <span class='id scan_setup'>scan_setup</span><span class='lparen'>(</span><span class='id f'>f</span><span class='period'>.</span><span class='id read'>read</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="next_token-instance_method">
+  
+    - (<tt>Object</tt>) <strong>next_token</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id next_token'>next_token</span>
+  <span class='kw'>return</span> <span class='kw'>if</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id eos?'>eos?</span>
+
+  <span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id peek'>peek</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>
+  <span class='ivar'>@lineno</span>  <span class='op'>+=</span>  <span class='int'>1</span>  <span class='kw'>if</span> <span class='id text'>text</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id token'>token</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='ivar'>@state</span>
+  <span class='kw'>when</span> <span class='kw'>nil</span>
+    <span class='kw'>case</span>
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[-@]?([_A-Za-z]|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])([_A-Za-z0-9-]|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])*\(\s*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:FUNCTION</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[-@]?([_A-Za-z]|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])([_A-Za-z0-9-]|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:IDENT</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\#([_A-Za-z0-9-]|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:HASH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*~=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:INCLUDES</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\|=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:DASHMATCH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\^=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:PREFIXMATCH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\$=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:SUFFIXMATCH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\*=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:SUBSTRINGMATCH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*!=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:NOT_EQUAL</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*=[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:EQUAL</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\)</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:RPAREN</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\[[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:LSQUARE</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\]</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:RSQUARE</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\+[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:PLUS</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*&gt;[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:GREATER</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*,[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:COMMA</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*~[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:TILDE</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\:not\([\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:NOT</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>-?([0-9]+|[0-9]*\.[0-9]+)</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:NUMBER</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\/\/[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:DOUBLESLASH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\r\n\f]*\/[\s\r\n\f]*</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:SLASH</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>U\+[0-9a-f?]{1,6}(-[0-9a-f]{1,6})?</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span><span class='lbracket'>[</span><span class='symbol'>:UNICODE_RANGE</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>[\s\t\r\n\f]+</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:S</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>&quot;([^\n\r\f&quot;]|\n|\r\n|\r|\f|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])*&quot;|'([^\n\r\f']|\n|\r\n|\r|\f|[^\0-\177]|\\[0-9A-Fa-f]{1,6}(\r\n|[\s\n\r\t\f])?|\\[^\n\r\f0-9A-Fa-f])*'</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='symbol'>:STRING</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>when</span> <span class='lparen'>(</span><span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id scan'>scan</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>.</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+       <span class='id action'>action</span> <span class='lbrace'>{</span> <span class='lbracket'>[</span><span class='id text'>text</span><span class='comma'>,</span> <span class='id text'>text</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+    <span class='kw'>else</span>
+      <span class='id text'>text</span> <span class='op'>=</span> <span class='ivar'>@ss</span><span class='period'>.</span><span class='id string'>string</span><span class='lbracket'>[</span><span class='ivar'>@ss</span><span class='period'>.</span><span class='id pos'>pos</span> <span class='op'>..</span> <span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span>
+      <span class='id raise'>raise</span>  <span class='const'>ScanError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>can not match: '</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id text'>text</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>  <span class='comment'># if
+</span>
+  <span class='kw'>else</span>
+    <span class='id raise'>raise</span>  <span class='const'>ScanError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>undefined state: '</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id state'>state</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>  <span class='comment'># case state
+</span>  <span class='id token'>token</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="scan_file-instance_method">
+  
+    - (<tt>Object</tt>) <strong>scan_file</strong>(filename) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id scan_file'>scan_file</span><span class='lparen'>(</span> <span class='id filename'>filename</span> <span class='rparen'>)</span>
+  <span class='id load_file'>load_file</span><span class='lparen'>(</span><span class='id filename'>filename</span><span class='rparen'>)</span>
+  <span class='id do_parse'>do_parse</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="scan_setup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>scan_setup</strong>(str) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18
+19
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 18</span>
+
+<span class='kw'>def</span> <span class='id scan_setup'>scan_setup</span><span class='lparen'>(</span><span class='id str'>str</span><span class='rparen'>)</span>
+  <span class='ivar'>@ss</span> <span class='op'>=</span> <span class='const'>StringScanner</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id str'>str</span><span class='rparen'>)</span>
+  <span class='ivar'>@lineno</span> <span class='op'>=</span>  <span class='int'>1</span>
+  <span class='ivar'>@state</span>  <span class='op'>=</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="scan_str-instance_method">
+  
+    - (<tt>Object</tt>) <strong>scan_str</strong>(str) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/nokogiri/css/generated_tokenizer.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id scan_str'>scan_str</span><span class='lparen'>(</span><span class='id str'>str</span><span class='rparen'>)</span>
+  <span class='id scan_setup'>scan_setup</span><span class='lparen'>(</span><span class='id str'>str</span><span class='rparen'>)</span>
+  <span class='id do_parse'>do_parse</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Jan 26 15:32:44 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
+</html>
