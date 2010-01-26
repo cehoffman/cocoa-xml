@@ -21,7 +21,7 @@ module CocoaXML
   def self.XML(source)
     parse source, NSXMLDocumentTidyXML
   end
-  
+
   private
     # Parse an HTML or XML source
     #

@@ -70,7 +70,7 @@ module CocoaXML
     def to_s
       XMLStringWithOptions NSXMLNodePrettyPrint
     end
-    
+
     # @private
     def self.included(klass)
       klass.class_eval do
@@ -85,7 +85,7 @@ module CocoaXML
         end
       end
     end
-    
+
     # Remove this node from its parent
     #
     # @return [self] this node
@@ -93,7 +93,7 @@ module CocoaXML
       # Implemented as an alias to detach
     end
     alias :unlink :remove
-    
+
     # An XPath formula to reach this node
     #
     # @return [String] XPath to this node

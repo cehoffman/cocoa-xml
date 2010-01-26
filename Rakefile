@@ -14,11 +14,10 @@ Hoe.spec 'cocoa-xml' do
   developer('Chris Hoffman', 'cehoffman@gmail.com')
 
   self.rubyforge_name = 'cocoa-xml'
-  
+
   self.yard_title = "Cocoa-XML"
   self.yard_markup = 'rdoc'
   self.yard_opts = ['--no-private']
-  
 end
 
 # vim: syntax=ruby
