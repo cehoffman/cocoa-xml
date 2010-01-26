@@ -9,13 +9,13 @@ Hoe.plugin :clean
 Hoe.plugin :git
 Hoe.plugin :yard
 
-Hoe.spec 'cocoa_xml' do
+Hoe.spec 'cocoa-xml' do
   self.version = ::CocoaXML::Version
   developer('Chris Hoffman', 'cehoffman@gmail.com')
 
-  self.rubyforge_name = 'cocoa-xml' # if different than 'cocoa_xml'
+  self.rubyforge_name = 'cocoa-xml'
   
-  self.yard_title = "Cocoa XML"
+  self.yard_title = "Cocoa-XML"
   self.yard_markup = 'rdoc'
   self.yard_opts = ['--no-private']
   
