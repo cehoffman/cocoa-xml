@@ -45,4 +45,4 @@ module CocoaXML
   end
 end
 
-::NSXMLDocument.send :include, Cocogiri::NSXMLDocumentExtras
+::NSXMLDocument.send :include, CocoaXML::NSXMLDocumentExtras

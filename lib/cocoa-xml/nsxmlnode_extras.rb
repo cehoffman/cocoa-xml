@@ -103,4 +103,4 @@ module CocoaXML
   end
 end
 
-::NSXMLNode.send :include, Cocogiri::NSXMLNodeExtras
+::NSXMLNode.send :include, CocoaXML::NSXMLNodeExtras

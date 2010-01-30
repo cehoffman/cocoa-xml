@@ -4,7 +4,7 @@ module CocoaXML
     #
     # @return [String] single string containing text of each element
     def text
-      collect { |node| (node.respon_to?(:to_str) && node.to_str) || node.text }.flatten.join
+      collect { |node| (node.respond_to?(:to_str) && node.to_str) || node.text }.flatten.join
     end
     alias :inner_text :text
 

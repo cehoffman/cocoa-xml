@@ -1,7 +1,10 @@
+framework 'Cocoa'
+
 require "cocoa-xml/version"
 require "cocoa-xml/nodeset"
 require "cocoa-xml/nsxmldocument_extras"
 require "cocoa-xml/nsxmlnode_extras"
+require "nokogiri/css"
 
 module CocoaXML
   # Parse an input HTML source
